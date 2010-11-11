@@ -3,8 +3,6 @@ Section: web
 Priority: optional
 Maintainer: John Leach <john@brightbox.co.uk>
 XSBC-Original-Maintainer: Jose Parrella <bureado@debian.org>
-#Build-Depends: debhelper (>= 5), autotools-dev, libpcre3-dev, zlib1g-dev, libssl-dev, cdbs, 
-#  libgeoip-dev, rake, rubygems, ruby-dev
 Build-Depends: debhelper (>= 5), autotools-dev, libpcre3-dev, zlib1g-dev, libssl-dev, cdbs, 
   libgeoip-dev, libruby1.9.1, ruby1.9.1-dev
 Standards-Version: 3.8.0
