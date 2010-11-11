@@ -1,0 +1,59 @@
+Source: librack-ruby
+Section: ruby
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Ryan Niebur <ryan@debian.org>
+Build-Depends: debhelper (>= 6), cdbs, libsetup-ruby1.8, ruby-pkg-tools (>= 0.17)
+Build-Depends-Indep: ruby1.8, ruby1.9.1
+Standards-Version: 3.8.4
+Homepage: http://rack.rubyforge.org
+Vcs-Git: git://github.com/rack/rack.git
+Vcs-Browser: http://github.com/rack/rack/tree/master
+
+Package: librack-ruby1.9.1
+Architecture: all
+Conflicts: librack-ruby1.9
+Replaces: librack-ruby1.9
+Depends: ruby1.9.1, libopenssl-ruby1.9.1, ${misc:Depends}
+Description: A modular Ruby webserver interface (Ruby 1.9.1)
+ Rack provides a minimal, modular and adaptable interface for
+ developing web applications in Ruby.  By wrapping HTTP requests and
+ responses in the simplest way possible, it unifies and distills the
+ API for web servers, web frameworks, and software in between (the
+ so-called middleware) into a single method call.
+ .
+ The exact details of this are described in the Rack specification,
+ which all Rack applications should conform to.
+ .
+ This is the package for Ruby 1.9.1.
+
+Package: librack-ruby1.8
+Architecture: all
+Depends: ruby1.8, libopenssl-ruby1.8, ${misc:Depends}
+Description: A modular Ruby webserver interface (Ruby 1.8)
+ Rack provides a minimal, modular and adaptable interface for
+ developing web applications in Ruby.  By wrapping HTTP requests and
+ responses in the simplest way possible, it unifies and distills the
+ API for web servers, web frameworks, and software in between (the
+ so-called middleware) into a single method call.
+ .
+ The exact details of this are described in the Rack specification,
+ which all Rack applications should conform to.
+ .
+ This is the package for Ruby 1.8.
+
+Package: librack-ruby
+Architecture: all
+Depends: librack-ruby1.8, ${misc:Depends}, libjs-jquery
+Description: A modular Ruby webserver interface
+ Rack provides a minimal, modular and adaptable interface for
+ developing web applications in Ruby.  By wrapping HTTP requests and
+ responses in the simplest way possible, it unifies and distills the
+ API for web servers, web frameworks, and software in between (the
+ so-called middleware) into a single method call.
+ .
+ The exact details of this are described in the Rack specification,
+ which all Rack applications should conform to.
+ .
+ This package provide documentation and depends on the package 
+ containing the actual library for the default Ruby version.

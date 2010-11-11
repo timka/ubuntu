@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/ruby-pkg-tools/1/class/ruby-setup-rb.mk
+
+binary-post-install/librack-ruby::
+	cp -r doc example debian/librack-ruby/usr/share/doc/librack-ruby
+	ln -sf ../../../../javascript/jquery/jquery.js debian/librack-ruby/usr/share/doc/librack-ruby/doc/js/jquery.js
+
+binary-post-install/librack-ruby1.8::
+	mv debian/librack-ruby1.8/usr/bin/rackup debian/librack-ruby1.8/usr/bin/rackup1.8
+
+binary-post-install/librack-ruby1.9.1::
+	mv debian/librack-ruby1.9.1/usr/bin/rackup debian/librack-ruby1.9.1/usr/bin/rackup1.9

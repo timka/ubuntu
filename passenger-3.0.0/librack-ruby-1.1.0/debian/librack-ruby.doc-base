@@ -1,0 +1,8 @@
+Document: librack-ruby
+Title: librack-ruby manual
+Abstract: This manual describes how librack-ruby works
+Section: Programming/Ruby
+
+Format: html
+Index: /usr/share/doc/librack-ruby/doc/index.html
+Files: /usr/share/doc/librack-ruby/doc/*/*.html
