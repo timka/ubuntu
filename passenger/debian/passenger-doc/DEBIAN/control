@@ -1,0 +1,16 @@
+Package: passenger-doc
+Source: passenger
+Version: 3.0.0-1bbox1~pre3ubuntu1
+Architecture: all
+Maintainer: John Leach <john@brightbox.co.uk>
+Installed-Size: 972
+Suggests: www-browse
+Section: doc
+Priority: optional
+Homepage: http://www.modrails.com/
+Description: Rails and Rac support for Apache2 - Documentation
+ Phusion Passenger — a.k.a. mod_rails or mod_rack — makes
+ deployment of Ruby web applications, such as those built on the
+ revolutionary Ruby on Rails web framework, a breeze.
+ .
+ This package provides the documentation for Phusion Passenger.
